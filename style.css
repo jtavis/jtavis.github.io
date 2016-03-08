@@ -1,4 +1,27 @@
 body {
-    background: blue;
-    color: white;
+    background: rgb(85, 129, 255);
+    font-family: helvetica, sans-serif;
+}
+h1 {
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-weight: 900;
+}
+h2 {
+	color: white;
+	font-weight: 700;
+}
+p {
+	color: white;
+	font-weight: 100;
+}
+ul {
+	color: white;
+	font-weight: 100;
+	font-style: italic;
+}
+a {
+	color:pink;
+	font-weight:700;
 }
