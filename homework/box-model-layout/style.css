@@ -9,11 +9,13 @@
 	width: 95%;
 	margin: 0 auto;
 	text-align: center;
+
 }
 
 #menu {
 	color: white;
 	background-color: black;
+	padding: 20px;
 }
 
 a {
@@ -23,6 +25,7 @@ a {
 
 p{
 	background-color: orange;
+	padding: 20px;
 }
 
 #purpleText {
