@@ -1,0 +1,38 @@
+#container {
+	background-color: rgb(220,220,220);
+	width: 95%;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#boxSize {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#menu {
+	color: white;
+	background-color: black;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+p{
+	background-color: orange;
+}
+
+#purpleText {
+	color: purple;
+}
+
+#greenText {
+	color: green;
+}
+
+#yellowText {
+	color: yellow;
+}
