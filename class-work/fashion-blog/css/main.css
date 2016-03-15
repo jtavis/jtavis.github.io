@@ -1,0 +1,69 @@
+.container {
+	color:#444444;
+	font-family: "Lato";
+	line-height: 1.5;
+	max-width: 720px;
+	margin: 20px;
+}
+h1.h1Style {
+	color: #DD0000;
+	font-weight: 300;
+	margin-bottom: 5px;
+	padding: 0;
+}
+h3.h3Style {
+	color: black;
+	font-weight: 300;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+nav.topNav a:link {
+	color: #dddddd;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	padding: 0;
+}
+nav.topNav a:hover {
+	color: black;
+}
+h2.artDate {
+	color: #cccccc;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+h2.artTitle {
+	color: black;
+	font-weight: 300;
+	margin-top: 5px;
+	padding: 0;
+}
+.artLink a {
+	color: #DD0000;
+	font-weight: 700;
+	text-align: right;
+}
+p.artLink {
+	text-align: right;
+}
+.line {
+	margin: 25px 0;
+	border-bottom: 1px #cccccc solid;
+}
+.bottomNav a:link {
+	color: #DD0000;
+}
+.bottomNav a:hover {
+	color: #aa0000;
+}
+p.bottomNav {
+	color: #bbbbbb;
+}
+img {
+	max-width: 720px;
+}
+footer {
+	margin-top: 40px;
+}
