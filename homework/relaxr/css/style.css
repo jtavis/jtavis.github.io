@@ -46,13 +46,16 @@ body {
 #container {
   width: 960px;
   margin: auto;
+  background-color: #f0efef;
 }
 
 header {
+  background-color: #033048
 
 }
 
 footer {
+  background-color: #121212
 
 }
 
@@ -60,6 +63,82 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+.logo {
+  font-weight: 800;
+  font-size: 40px;
+  float: left;
+  padding: 25px;
+}
+.whiteText {
+  color: white;
+}
+.yellowText {
+  color: #f9e42e;
+}
+.topNav {
+    float: right;
+}
+.topNav a{
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+  color: #f9e42e;
+  padding: 25px;
+  margin-right: -4px;
+}
 
+main {
+  width: 700px;
+  float: left;
+  background-color: #f0efef;
+}
 
+.articleStyle {
+  padding: 10px;
+}
 
+.articleStyle h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #606161;
+}
+
+.articleStyle img {
+  max-width: 98%;
+}
+
+.articleStyle p {
+  color: #606161;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+aside {
+  width: 240px;
+  float: right;
+  background-color: #f0efef;
+}
+
+.asideStyle {
+  padding: 10px;
+}
+
+.asideStyle h3 {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.asideStyle p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.asideStyle a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 300;
+}
+.asideStyle ul {
+  font-size: 22px;
+  font-weight: 300;
+}
