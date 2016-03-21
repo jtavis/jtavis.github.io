@@ -44,18 +44,18 @@ body {
 
 /* Center the container */
 #container {
-  width: 960px;
+  width: 1020px;
   margin: auto;
   background-color: #f0efef;
 }
 
 header {
-  background-color: #033048
+  background-color: #033048;
 
 }
 
 footer {
-  background-color: #121212
+  background-color: #121212;
 
 }
 
@@ -91,6 +91,7 @@ main {
   width: 700px;
   float: left;
   background-color: #f0efef;
+  padding: 20px;
 }
 
 .articleStyle {
@@ -100,7 +101,8 @@ main {
 .articleStyle h2 {
   font-weight: 600;
   font-size: 40px;
-  color: #606161;
+  color: #033048;
+  margin: 10px;
 }
 
 .articleStyle img {
@@ -113,32 +115,97 @@ main {
   font-size: 24px;
 }
 
+.articleStyle p::first-letter {
+  font-size: 200%;
+  font-weight: 600;
+  padding: 0;
+  vertical-align: top;
+  float:left;
+}
+.articleStyle h4 {
+  text-align: right;
+}
+.articleStyle a {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 aside {
   width: 240px;
   float: right;
   background-color: #f0efef;
+  padding: 20px;
 }
 
 .asideStyle {
-  padding: 10px;
+  padding: 20px;
 }
 
 .asideStyle h3 {
   font-weight: 800;
   font-size: 32px;
+  color: #033048;
 }
 
 .asideStyle p {
   font-size: 22px;
   font-weight: 300;
+  color: #606161;
 }
 
-.asideStyle a {
+#asideLearnMore a {
   text-decoration: none;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 600;
+  color: #033048;
+
 }
-.asideStyle ul {
+.asideStyle ul li a {
   font-size: 22px;
   font-weight: 300;
+  color: #606161;
+  text-decoration: none;
+
+}
+.asideStyle ul {
+  line-height: 30px;
+}
+
+.line {
+  margin: 25px 0;
+  border-bottom: 1px #cccccc solid;
+}
+
+.signUp {
+  background-color: #f9e42e;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+}
+.signUp a {
+  background-color: #033048;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px 10px 30px;
+  vertical-align: middle;
+}
+.bottomLogo {
+  font-weight: 800;
+  font-size: 40px;
+  padding: 25px;
+  text-align: center;
+}
+.smallText {
+  font-size: 14px;
+  color: white;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+
 }
