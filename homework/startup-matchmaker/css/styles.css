@@ -1,0 +1,137 @@
+
+
+.clear {
+  clear: both;
+}
+
+
+header {
+	overflow: auto;
+	background-color: black;
+	padding: 0 40px;
+	border-bottom: 5px solid yellow;
+}
+
+header h1 {
+	float: left;
+	color: yellow;
+	font-family: "Merriweather", serif;
+}
+
+header nav {
+	float: right;	
+	padding: 30px;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	font-family: "Source Sans Pro";
+	padding: 5px;
+}
+
+p.tagline {
+	text-align: center;
+	color: black;
+	font-family: "Merriweather";
+	background: #C6C6C6;
+	margin: 0;
+	padding: 15px;
+	font-style: italic;
+}
+
+#taste {
+	color: gray;
+	text-decoration: line-through;
+}
+
+#are {
+	border-bottom: 2px solid yellow;
+}
+
+
+
+.mainImg {
+	background: url("../img/coworking.jpg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	background-position: 0 -60px;
+}
+
+.mainBoxOnImg {
+	float: right;
+	width: 40%;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin: 40px;
+	padding: 30px 30px 60px 30px;
+	font-family: "Source Sans Pro";
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mainBoxOnImg h2 {
+	font-weight: 800;
+	font-size: 25px;
+	padding: 0 10px 0 10px;
+}
+
+.mainBoxOnImg p {
+	font-size: 18px;
+	padding: 0 10px 15px 10px;
+}
+
+button.mainBoxButton {
+	background-color: yellow;
+	color: black;
+	text-align: center;
+	width:100%;
+	font-family: "Oswald";
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+
+article {
+	float: left;
+	width: 29%;
+	padding: 25px;
+	
+}
+
+#middleArticle {
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+
+article h2 {
+	font-family:"Merriweather", serif;
+	font-size: 25px;
+}
+
+article p {
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+}
+
+article button {
+	background-color: #C6C6C6;
+	color: black;
+	text-align: center;
+	width:100%;
+	font-family: "Oswald";
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+
+
+
+footer {
+	background-color: black;
+	color: white;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+	padding: 30px;
+}
