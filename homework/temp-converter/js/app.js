@@ -1,23 +1,20 @@
 $(document).ready(function () {
-	$('#degF').keypress(presto);
-	$('#degC').keypress(presto);
+	$('#degF').keyup(presto);
+	$('#degC').keyup(presto);
 
 	function presto () {
-	var degF = $('#degF').val();
-	var degFNum = parseInt(degF);
-	var degC = $('#degC').val();
-	var degCNum = parseInt(degC);
+	var degF = parseFloat($('#degF').val());
+	var degC = parseFloat($('#degC').val());
 
-		if (degFNum!=NaN) {
-			var convertC = (degFNum* 1.8) + 32;
-			$('#degC').val(convertC);
+
+		if (degF!=null) {
+			$('#output').text((degF* 1.8) + 32);
 		}
-		else if (degCNum!=NaN){
-			var convertF = (degCNum- 32) / 1.8;
-			$('#degF').val(convertF);
+		else if (degC!=null){
+			$('#output').text((degC - 32) / 1.8);
 		}
 		else{
-			alert ("This is not a number");
+			alert('This is not a number');
 		}
 
 	}
