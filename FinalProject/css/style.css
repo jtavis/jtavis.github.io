@@ -178,7 +178,18 @@ h2 a {
   font-weight: 600;
 }
 
+#enterSrch {
+  height: 400px;
+  font-size: 70px;
+  text-align: center;
+  line-height: 200px;
+}
 
+.contentPage {
+  height: 400px;
+  padding: 20px;
+  margin: 40px;
+}
 
 /******************************************
 /* SIDEBAR
