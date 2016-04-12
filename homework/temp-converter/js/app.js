@@ -29,4 +29,11 @@ $(document).ready(function () {
 			$('#output2').text("Wear shorts!");
 		}
 	}
+
+	$('#clear').click(function(){
+		$('#degF').val("");
+		$('#degC').val("");
+		$('#output').text("");
+		$('#output2').text("");
+	})
 });

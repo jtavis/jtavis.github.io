@@ -11,6 +11,21 @@
 // Legendary Bonus: Remove individual <li> elements when they are clicked
 
 $(document).ready(function () {
+	$('#clickme').click(function(){
+		if ($('#item').val()=="") {
+			alert ("Don't forget to write something!");
+		}
+		else {
+			$('#list').append("<li>"+$('#item').val()+"</li>");
+			$('#item').val('');
+		}
+		$('#item').focus();
+
+	})
+
+	$(document).on('click','#list',function(){
+		$(this).remove();
+	})
 
 	// 1. Attach a .click() event to #clickme; attach an anonymous function to the .click()
 	// 1A. This anonymous function should create a variable, newItem equal to the value of #item
@@ -18,4 +33,5 @@ $(document).ready(function () {
 	// 1C. This anonymous function should then clear the text inside of #item
 
 	// 2. Write the appendItem function here
+
 })
