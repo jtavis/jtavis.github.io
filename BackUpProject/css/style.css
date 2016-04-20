@@ -1,0 +1,66 @@
+body {
+	background:white;
+	margin:0;
+	padding:0;
+	font-family:Helvetica, Arial, Verdana;
+}
+
+h1 {
+	color:#888888;
+	text-align: center;
+}
+
+p {
+	color:#888888;
+}
+
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	padding:20px;
+}
+
+#lookup {
+	margin:20px;
+	text-align: center;
+	color:#888888;
+}
+
+#lookup input {
+	border-width: 2px;
+	border-color: #888888;
+}
+
+#lookup button {
+	background-color: #888888;
+	color: white;
+	border-width: 0px;
+	padding: 2px;
+}
+
+#temp {
+	margin: 20px;
+	text-align: center;
+	font-size: 30px;
+	color:#888888;
+}
+
+#hat {
+	text-align: center;
+	height: 100px;
+}
+
+#top {
+	text-align: center;
+	height: 100px;
+}
+
+#bottom {
+	text-align: center;
+	height: 100px;
+}
+
+#shoes {
+	text-align: center;
+	height: 100px;
+}

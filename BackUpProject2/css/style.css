@@ -1,0 +1,44 @@
+#app {
+	padding-top: 10px;
+	font-family: monospace;
+	width: 500px;
+	margin: 0px auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.row div {
+	text-align: center;
+	width: 100px;
+	height: 80px;
+	padding: 30px;
+	font-size: 60px;
+	border: 1px solid #252525;
+	float: left;
+}
+
+.row div:hover {
+	background-color: #cccccc;
+	cursor: pointer;
+}
+
+button {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	width: 97%;
+}
+
+#output {
+	color: blue;
+	font-size: 30px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
