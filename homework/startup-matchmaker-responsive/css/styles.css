@@ -1,3 +1,6 @@
+#container {
+	width:100%;
+}
 
 
 .clear {
@@ -136,4 +139,106 @@ footer {
 	font-family: "Source Sans Pro";
 	font-size: 0.6em;
 	padding: 1.5em;
+}
+
+#burger {
+	display: none;
+	cursor: pointer;
+}
+
+#mobile-nav {
+	display: none;
+	}
+
+@media (max-width: 1010px) {
+	#large-nav {
+		display: none;
+	}
+	#burger {
+		display: block;
+		float: right;
+		margin-top: 1.0em;
+	}
+
+
+	#mobile-nav a {
+		display: block;
+		background-color: rgb(222,222,222);
+		text-align: center;
+		padding: 0.5em;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: black;
+
+	}
+
+	#mobile-nav a:hover{
+		background-color: black;
+		color: white;
+	}
+	article {
+		display: block;
+		width: 90%;
+		padding: 1em;
+		
+	}
+
+	#middleArticle {
+		border-right: none;
+		border-left: none;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+
+	}
+	article button {
+		background-color: #C6C6C6;
+		color: black;
+		text-align: center;
+		width:100%;
+		font-family: "Oswald";
+		padding: 0.5em;
+		font-weight: 800;
+	}
+
+	h1 {
+		font-size: 1.2em;
+	}
+	.mainImg {
+		background-size: auto;
+		width: 100%;
+		background-position: center;
+		height: auto;
+		margin: 0px;
+	}
+	.mainBoxOnImg {
+		display: inline block;
+		width: 100%;
+		box-shadow: none;
+		float: none;
+		margin:	0px;
+		padding: 0px;
+	}
+	.mainBoxOnImg h2 {
+		font-weight: 800;
+		font-size: 1.25em;
+		padding: 0.5em;
+		margin: 0em 1em 0em 1em;
+	}
+
+	.mainBoxOnImg p {
+		font-size: .8em;
+		padding: 0.5em;
+		margin: 1em;
+	}
+
+	button.mainBoxButton {
+		background-color: yellow;
+		color: black;
+		text-align: center;
+		font-family: "Oswald";
+		padding: 0.5em;
+		margin: 1em;
+		width: 90%;
+		font-weight: 800;
+	}
 }

@@ -17,7 +17,7 @@
 				<h1 class="logo">Nonprofits in My Neighborhood</h1>
 				<nav>
 					<ul>
-						<li><a href="#">HOME</a></li>
+						<li><a href="index.html">HOME</a></li>
 						<li><a href="about.html">ABOUT</a></li>
 						<li><a href="faq.html">FAQ</a></li>
 						<li><a href="contact.html">CONTACT US</a></li>
@@ -26,8 +26,8 @@
 				</nav>
 				<div class="clear"></div>
 				<div id="search">
-				Search Near This Address: <input id="address"></input>
-				<!-- State: 
+				Search Near: <input></input>
+				State: 
 				<select class="state-dropdown" name="state[id]" id="state_id"><option value="">Any State</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
@@ -91,7 +91,7 @@
 					<option value="PR">Puerto Rico</option>
 					<option value="PW">Palau</option>
 					<option value="VI">Virgin Island</option>
-					<option value="ZZ">Outside U.S.</option></select> -->
+					<option value="ZZ">Outside U.S.</option></select>
 				Nonprofit Category: 
 				<select name="ntee[id]" id="ntee_id">
 					<option value="">Any Category</option>
@@ -105,7 +105,7 @@
 					<option value="8">Religion Related</option>
 					<option value="9">Mutual/Membership Benefit</option>
 					<option value="10">Unknown, Unclassified</option></select>
-				<button><a href="results.html" >Search</a></button>
+				<button id="searchButton">Search</button>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -113,6 +113,76 @@
 		
 		<section id="main">
 			<div id="enterSrch">Enter your search!</div>
+			<div class="container clearfix">
+				<section id="posts" class="alignleft">
+					<article class="post">
+						<h2><a href="#">Nonprofit 1</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 2</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 3</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>				
+					<article class="post">
+						<h2><a href="#">Nonprofit 4</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 5</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 6</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 7</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 8</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 9</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">Nonprofit 10</a></h2>
+						<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+					</article>
+					
+
+				</section>
+				<aside id="sidebar" class="alignright">
+					<h2>Map</h2>
+					<div id="map"></div>
+				</aside>
+			</div>
 		</section>
 
 		<footer>
@@ -120,9 +190,9 @@
 
 		</footer>
 	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfR5gavsN-A7ZeowoRvpODpv9-TLJaqSE&callback=initMap"
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfR5gavsN-A7ZeowoRvpODpv9-TLJaqSE&callback=initMap"
   type="text/javascript"></script>
-  	<script src="https://projects.propublica.org/nonprofits/api/v1" type="text/javascript"></script>
+  	<!-- <script src="https://projects.propublica.org/nonprofits/api/v1" type="text/javascript"></script> -->
     <script src="js/app.js"></script>
 	</body>
 </html>
