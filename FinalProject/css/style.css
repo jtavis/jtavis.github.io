@@ -57,6 +57,7 @@ a {
 
 #main {
   margin-top: 1.3em;
+  padding: .5em 3em;
 }
 
 #posts {
@@ -197,24 +198,15 @@ h2 a {
 
 
 .post p {
-  font-size: .8em;
+  font-size: 1em;
   line-height: 1.333;
   color: #606161;
 }
 
 .smallBold {
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 600;
 }
-
-.moreInfo a {
-  height: 50px;
-  overflow: scroll;
-  font-size: .8em;
-  color: #043049;
-  font-weight: 600;
-}
-
 
 #enterSrch {
   height: 400px;
@@ -241,13 +233,6 @@ h2 a {
 /******************************************
 /* SIDEBAR
 /*******************************************/
-
-#sidebar h2 {
-  font-weight: 600;
-  font-size: 1.3em;
-  line-height: 1.3;
-  color: #043049;
-}
 
 #map {
         width: 100%;
@@ -310,6 +295,16 @@ footer .logo {
     padding: 3%;
     margin: 7%;
     font-weight: 600;
+  }
+
+  #posts {
+  width: 100%;
+  float: none;
+  }
+
+  #sidebar {
+    width: 100%;
+    float: none;
   }
 
   .logo {

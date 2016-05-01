@@ -139,7 +139,7 @@
 		
 		<section id="main">
 			<div id="enterSrch">Enter your search!</div>
-			<div class="container clearfix">
+			<div class="clearfix">
 				<section id="posts" class="alignleft">
 					<article id="post">
 						
@@ -147,7 +147,6 @@
 
 				</section>
 				<aside id="sidebar" class="alignright">
-					<h2>Map</h2>
 					<div id="map"></div>
 				</aside>
 			</div>
@@ -161,17 +160,13 @@
 	<script src="js/handlebars-v4.0.5.js"></script>
 	<script id="entry-template" type="text/x-handlebars-template">
 	  <div class="entry post">
-	    <h2>{{name}}</h2>
+	    <h2>Organization: {{name}}</h2>
 	    <div class="address smallBold">
 	    	Address: {{address}}, {{city}}, {{state}} {{zipcode}}
 	    </div>
-	    <div class="revenue smallBold">
-	    	Annual revenue: {{totrevenue}}
-	    </div>
 	    <div class="moreInfo">
-	      <a href="{{guidestar_url}}">Guidestar Profile</a>
-	      <a href="{{nccs_url}}">National Center for Charitable Statistics Profile</a>
-	      <a href="{{pdf_url}}">Link to full Form 990</a>
+	      <p><a href="{{guidestar_url}}">Guidestar Profile</a></p>
+	      <p><a href="{{nccs_url}}">National Center for Charitable Statistics Profile</a></p>
 	    </div>
 	  </div>
 	</script>
