@@ -2,6 +2,22 @@
 	text-align: center;
 }
 
+body {
+	margin-top: 50px;
+}
+
 header {
+	height: 50px;
 	background: blue;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transition: all 5s ease-in-out;
+}
+
+.scrolled {
+	background: red;
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
 }
