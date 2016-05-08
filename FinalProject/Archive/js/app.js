@@ -33,6 +33,9 @@ var zipCode;
 
 //initiates zipCode variable for zip code from user
 
+var NPdata;
+//variable for API data
+
 function codeAddress(addressVar) {
 	var geocoder = new google.maps.Geocoder();
 
@@ -68,51 +71,34 @@ function codeAddress(addressVar) {
   //Google Maps API function setting the address on the map to the fullAddress passed from the search bar
 
 
- 
-
-// function nonprofitsList (data) {
-// 	if (data.organization.zipcode.substr(0,5) = zipCode){
-// 		var source = $('#entry-template').html();
-// 		var template = Handlebars.compile(source);
-// 		$('#post').append(template(data));
-
-// 		//populate the handlebars template with API data from organization object--not sure code above is specific enough
-		
-// 		data.forEach(function(organization){codeAddress();
-// 		});
-
-// 		//Drop a marker onto the Google Map for each org listing
-// 	}
-//-----------------Commenting out b/c can't connect to API.  Replacing with test data below.
-
 function nonprofitsList (testData) {
-	testData = [{'organization': [
-		{
-		'name': 'GOODWILL INDUSTRIES HOUSING CO INC',
-		'address': '9 BOND ST',
-		'city': 'BROOKLYN',
-		'state': 'NY',
-		'zipcode': '11201-5805',
-		'guidestar_url': 'http://www.guidestar.org/profile/11-2224215',
-		'nccs_url': 'http://nccsweb.urban.org/communityplatform/nccs/organization/profile/id/112224215/',
-	}, 
-	{
-		'name': 'FEGS HOME ATTENDANT SERVICES INC',
-		'address': '424 E 147TH ST',
-		'city': 'BRONX',
-		'state': 'NY',
-		'zipcode': '10455-4104',
-		'guidestar_url': 'http://www.guidestar.org/profile/13-3161675',
-		'nccs_url': 'http://nccsweb.urban.org/communityplatform/nccs/organization/profile/id/133161675/',
-	}]}]
+	// testData = [{'organization': [
+	// 	{
+	// 	'name': 'GOODWILL INDUSTRIES HOUSING CO INC',
+	// 	'address': '9 BOND ST',
+	// 	'city': 'BROOKLYN',
+	// 	'state': 'NY',
+	// 	'zipcode': '11201-5805',
+	// 	'guidestar_url': 'http://www.guidestar.org/profile/11-2224215',
+	// 	'nccs_url': 'http://nccsweb.urban.org/communityplatform/nccs/organization/profile/id/112224215/',
+	// }, 
+	// {
+	// 	'name': 'FEGS HOME ATTENDANT SERVICES INC',
+	// 	'address': '424 E 147TH ST',
+	// 	'city': 'BRONX',
+	// 	'state': 'NY',
+	// 	'zipcode': '10455-4104',
+	// 	'guidestar_url': 'http://www.guidestar.org/profile/13-3161675',
+	// 	'nccs_url': 'http://nccsweb.urban.org/communityplatform/nccs/organization/profile/id/133161675/',
+	// }]}]
 
-	console.log(testData);
+	// console.log(testData);
 	
 		var source = $('#entry-template').html();
 		var template = Handlebars.compile(source);
 		//populate the handlebars template with API data from organization object
 		
-		testData.forEach(function(org) {  
+		NPdata.forEach(function(org) {  
             org.organization.forEach(function (organization) {
 
                 if (organization.zipcode.slice(0,5) == zipCode){
@@ -124,6 +110,8 @@ function nonprofitsList (testData) {
                 else {}
             })
 		});
+
+        //Set up the nonprofit entries in handlebars template
 
         var geocoder = new google.maps.Geocoder();
 
@@ -143,7 +131,11 @@ function nonprofitsList (testData) {
 		//Drop a marker onto the Google Map for each org listing
 
 }
-//Set up the nonprofit entries in handlebars template, and code NP address
+
+function test (data) {
+    console.log('testing!')
+    console.log(data)
+}
 
 
 $('#searchButton').click(function () {
@@ -160,21 +152,27 @@ $('#searchButton').click(function () {
 
 //Concatenate the full address from the various fields entered by user and puller from API
 
-// 	var url = 'https://projects.propublica.org/nonprofits/api/v1/search.json?page=0&state%5Bid%5D='+stateID+'&ntee%5Bid%5D='+ntee+'&c_code%5Bid%5D=3&order=revenue&sort_order=desc&callback=?';
+	NPdata = 'https://projects.propublica.org/nonprofits/api/v1/search.json?state='+stateID+'&ntee='+ntee+'&c_code=3';
 
-// //Pass search parameters to the API
+//Pass search parameters to the API
 
-// 	$.ajax({
-// 		type: 'GET',
-// 		url: url,
-// 		dataType: "jsonp",
-// 		success: function (response) {
-// 			console.log(response)
-// 		},
-// 		error: function (xhr) {
-// 			console.log(xhr)
-// 		}
-// 	})
+    console.log(encodeURI(NPdata))
+
+	$.ajax({
+		type: 'GET',
+		url: encodeURI(NPdata),
+        // crossDomain: true,
+        jsonpCallback: "test",
+        // contentType: "application/json",
+        dataType: 'jsonp',
+
+		success: function (response) {
+			console.log(response)
+		},
+		error: function (xhr) {
+			console.log(xhr)
+		}
+	})
 	
 	function clearValues() {
 		$('#address1').val('');

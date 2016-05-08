@@ -2,9 +2,6 @@ $(document).ready({
 	// other event handlers
 });
 
-// $(window).resize(function () {
-// 		console.log($(window).width())
-// 	});
 
 $('#burger').click(function () {
 	$('#mobile-nav').slideToggle();
@@ -33,8 +30,6 @@ var zipCode;
 
 //initiates zipCode variable for zip code from user
 
-// var NPdata = [];
-//variable for API data
 
 function codeAddress(addressVar) {
 	var geocoder = new google.maps.Geocoder();
@@ -71,67 +66,6 @@ function codeAddress(addressVar) {
   //Google Maps API function setting the address on the map to the fullAddress passed from the search bar
 
 
-function nonprofitsList (testData) {
-	// testData = [{'organization': [
-	// 	{
-	// 	'name': 'GOODWILL INDUSTRIES HOUSING CO INC',
-	// 	'address': '9 BOND ST',
-	// 	'city': 'BROOKLYN',
-	// 	'state': 'NY',
-	// 	'zipcode': '11201-5805',
-	// 	'guidestar_url': 'http://www.guidestar.org/profile/11-2224215',
-	// 	'nccs_url': 'http://nccsweb.urban.org/communityplatform/nccs/organization/profile/id/112224215/',
-	// }, 
-	// {
-	// 	'name': 'FEGS HOME ATTENDANT SERVICES INC',
-	// 	'address': '424 E 147TH ST',
-	// 	'city': 'BRONX',
-	// 	'state': 'NY',
-	// 	'zipcode': '10455-4104',
-	// 	'guidestar_url': 'http://www.guidestar.org/profile/13-3161675',
-	// 	'nccs_url': 'http://nccsweb.urban.org/communityplatform/nccs/organization/profile/id/133161675/',
-	// }]}]
-
-	// console.log(testData);
-	
-		// var source = $('#entry-template').html();
-		// var template = Handlebars.compile(source);
-		//populate the handlebars template with API data from organization object
-		
-		// NPdata.forEach(function(org) {  
-  //           org.organization.forEach(function (organization) {
-
-  //               if (organization.zipcode.slice(0,5) == zipCode){
-  //   			fullNPAddress.push(organization.address+', '+organization.city+', '+organization.state+' '+organization.zipcode);
-  //   			console.log(fullNPAddress);
-
-  //               $('#post').append(template(organization));
-  //               }
-  //               else {}
-  //           })
-		// });
-
-        //Set up the nonprofit entries in handlebars template
-
-        // var geocoder = new google.maps.Geocoder();
-
-        // fullNPAddress.forEach(function(orgAdd){
-        //     geocoder.geocode( { 'address': orgAdd}, function(results, status) {
-        //       if (status == google.maps.GeocoderStatus.OK) {
-        //         var marker = new google.maps.Marker({
-        //             map: map,
-        //             position: results[0].geometry.location
-        //         });
-        //       } else {
-        //         alert("Geocode was not successful for the following reason: " + status);
-        //       }
-        //     });
-        // })
-		
-		//Drop a marker onto the Google Map for each org listing
-
-}
-
 function test (data) {
     console.log('testing!')
     console.log(data)
@@ -153,21 +87,11 @@ $('#searchButton').click(function () {
 
 //Concatenate the full address from the various fields entered by user and puller from API
 
-	// NPdata = 'https://projects.propublica.org/nonprofits/api/v1/search.json?state='+stateID+'&ntee='+ntee+'&c_code=3';
-
-	// NPdata = ;
-
-//Pass search parameters to the API
-
-    // console.log(encodeURI(NPdata))
 
 	$.ajax({
 		type: 'GET',
 		url: '/search/'+stateID+'/'+ntee+'/'+city,
-        // crossDomain: true,
-        // jsonpCallback: "test",
-        // // contentType: "application/json",
-        // dataType: 'jsonp',
+
 		success: function (response) {
 			parseData(response)
 		},
@@ -177,7 +101,6 @@ $('#searchButton').click(function () {
 	})
 
 	function parseData (data) {
-		// console.log(data)	
 		console.log(typeof data)
 		var source = $('#entry-template').html();
 		var template = Handlebars.compile(source);
@@ -235,7 +158,6 @@ $('#searchButton').click(function () {
 			$('#posts').slideToggle();
 			$('#sidebar').slideToggle();
 			codeAddress(fullAddress);
-			nonprofitsList();
 			clearValues();
 
 	}
@@ -244,7 +166,6 @@ $('#searchButton').click(function () {
 
 	else{
 			codeAddress(fullAddress);
-			nonprofitsList();
 			clearValues();
 
 	}
