@@ -34,6 +34,6 @@ app.get('/search/:stateID/:ntee/:city', function (req, res) {
 	})
 })
 
-app.listen(1337, function () {
-	console.log('serving on 1337')
+app.listen(process.env.PORT || 5000, function () {
+	console.log('serving on ' + process.env.PORT || 5000)
 })
