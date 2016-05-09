@@ -138,7 +138,7 @@ $('#searchButton').click(function () {
             	});
         	}, delay)
 
-        	delay += 500
+        	delay += 700
         })
 
 	}
