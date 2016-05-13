@@ -120,7 +120,7 @@ $('#searchButton').click(function () {
 
 		        var geocoder = new google.maps.Geocoder();
 
-        var delay = 1000
+        var delay = 2500
 
         fullNPAddress.forEach(function(orgAdd){
 
